@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano Simulator</title>
+
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h2>Piano Virtual</h2>
+
+        <div class="container__volume-slider column">
+          <span>Volume</span>
+          <input type="range">
+        </div>
+
+        <div class="container__keys-check column">
+          <span>Teclas</span>
+
+          <input type="checkbox"/>
+        </div>
+      </header>
+
+      <ul class="container__piano-keys">
+        <li class="container__key--white">a</li>
+        <li class="container__key--black">w</li>
+        <li class="container__key--white">s</li>
+        <li class="container__key--black">e</li>
+        <li class="container__key--white">d</li>
+        <li class="container__key--white">f</li>
+        <li class="container__key--black">t</li>
+        <li class="container__key--white">g</li>
+        <li class="container__key--black">y</li>
+        <li class="container__key--white">h</li>
+        <li class="container__key--black">u</li>
+        <li class="container__key--white">j</li>
+        
+      </ul>
+    </section>
+
+    <script src="./src/scripts/engine.js"></script>
+  </body>
+</html>
