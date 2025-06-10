@@ -5,40 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piano Simulator</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/main.css" />
   </head>
   <body>
     <section class="container">
-      <header>
-        <h2>Piano Virtual</h2>
+      <header class="header">
+        <h2 class="header__title">Piano Virtual</h2>
 
-        <div class="container__volume-slider column">
-          <span>Volume</span>
-          <input type="range">
+        <div class="header__volume-slider header__column">
+          <label class="header__label" for="volume-slider">Volume</label>
+          <input class="header__label" type="range" id="volume-slider" />
         </div>
 
-        <div class="container__keys-check column">
-          <span>Teclas</span>
-
-          <input type="checkbox"/>
+        <div class="header__keys-check header__column">
+          <label for="keys-check">Teclas</label>
+          <input class="header__check-box" type="checkbox" id="keys-check" />
         </div>
       </header>
 
-      <ul class="container__piano-keys">
-        <li class="container__key--white">a</li>
-        <li class="container__key--black">w</li>
-        <li class="container__key--white">s</li>
-        <li class="container__key--black">e</li>
-        <li class="container__key--white">d</li>
-        <li class="container__key--white">f</li>
-        <li class="container__key--black">t</li>
-        <li class="container__key--white">g</li>
-        <li class="container__key--black">y</li>
-        <li class="container__key--white">h</li>
-        <li class="container__key--black">u</li>
-        <li class="container__key--white">j</li>
-        
+      <ul class="piano">
+        <li class="piano__key--white"><span class="piano__key-label">a</span></li>
+        <li class="piano__key--black"><span class="piano__key-label">w</span></li>
+        <li class="piano__key--white"><span class="piano__key-label">s</span></li>
+        <li class="piano__key--black"><span class="piano__key-label">e</span></li>
+        <li class="piano__key--white"><span class="piano__key-label">d</span></li>
+        <li class="piano__key--white"><span class="piano__key-label">f</span></li>
+        <li class="piano__key--black"><span class="piano__key-label">t</span></li>
+        <li class="piano__key--white"><span class="piano__key-label">g</span></li>
+        <li class="piano__key--black"><span class="piano__key-label">y</span></li>
+        <li class="piano__key--white"><span class="piano__key-label">h</span></li>
+        <li class="piano__key--black"><span class="piano__key-label">u</span></li>
+        <li class="piano__key--white"><span class="piano__key-label">j</span></li>
       </ul>
     </section>
 
