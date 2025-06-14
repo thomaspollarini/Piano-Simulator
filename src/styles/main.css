@@ -100,7 +100,7 @@ body {
   background: linear-gradient(to bottom, #fff 96%, #eee 4%);
 }
 
-.piano__key--white:active {
+.piano__key--white:active, .piano__key--white.piano__key--active {
   background: linear-gradient(to bottom, #fff 0%, #eee 100%);
   box-shadow: inset -0.25rem 0.25rem 1.25rem rgba(0, 0, 0, 0.2);
 }
@@ -120,7 +120,7 @@ body {
   background: linear-gradient(to bottom, #333, #000);
 }
 
-.piano__key--black:active {
+.piano__key--black:active, .piano__key--black.piano__key--active {
   background: linear-gradient(to bottom, #000 0%, #434343 100%);
   box-shadow: inset -0.25rem 0.25rem 0.625rem rgba(255, 255, 255, 0.1);
 }
