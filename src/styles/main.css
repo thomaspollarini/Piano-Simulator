@@ -132,3 +132,7 @@ body {
   text-align: center;
   font-size: 1.13rem;
 }
+
+.hidden span{
+  display: none;
+}
